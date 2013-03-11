@@ -37,6 +37,7 @@ $.fn.serializeObject = function()
     });
     return o;
 };
+
 function gup( name )
 	{
 	  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
@@ -48,6 +49,7 @@ function gup( name )
 	  else
 	    return decodeURIComponent(results[1].replace("\+"," "));
 }
+var getParameterUrl = gup;
 
 $(function(){
 	$(".phone").mask("(99) 9999-9999");
