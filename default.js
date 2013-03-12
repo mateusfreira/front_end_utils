@@ -52,6 +52,8 @@ function gup( name )
 var getParameterUrl = gup;
 
 $(function(){
+	
+	$('[title]').tooltip();
 	$(".phone").mask("(99) 9999-9999");
 	$(".time").mask("99:99");
 	$(".filter_button").click(function(){
