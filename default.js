@@ -87,8 +87,7 @@ $(function(){
 });
 
 $(function(){
-	$.ajaxSetup({dataType:"text",error:function(t){ 
-	}});
+	$.ajaxSetup({dataType:"text",error:function(t){}});
 	$(document).ajaxStart(function(){
 		$("#ajax_loader").show();
 	});
@@ -96,7 +95,6 @@ $(function(){
 		$("#ajax_loader").hide();
 	});
 	$("#ajax_loader").hide();
-
 });
 var getHourBr = function (d){
 	hour = d.getHours();
