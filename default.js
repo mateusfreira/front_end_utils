@@ -60,6 +60,7 @@ $(function(){
 		$('.filter_form').toggle();
 	});
 	$(".currency").maskMoney({thousands:''});
+	$(".sorted").tablesorter();
 
 	$(".translate_date").each(function(){
 		$(this).html(getDateBr(new Date(parseInt($(this).text()))));
